@@ -1,1 +1,133 @@
-Hello World Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viv0-Z | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Basic inline styles for immediate visual feedback before creating style.css */
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; color: #333; }
+        .container { width: 80%; margin: auto; overflow: hidden; padding: 20px 0; }
+        header { background: #333; color: #fff; padding-top: 20px; min-height: 70px; border-bottom: #77aaff 3px solid; }
+        header h1 { float: left; margin: 0; }
+        header nav ul { margin: 0; padding: 0; list-style: none; float: right; }
+        header li { display: inline; padding: 0 15px; }
+        header a { color: #fff; text-decoration: none; text-transform: uppercase; font-size: 16px; }
+        header a:hover { color: #77aaff; font-weight: bold; }
+        .hero { background: #555 url('https://via.placeholder.com/1500x500/000000/FFFFFF?text=Your+Background+Image') no-repeat center center/cover; color: #fff; text-align: center; padding: 100px 0; }
+        .hero h2 { font-size: 3em; margin-bottom: 10px; }
+        .hero p { font-size: 1.2em; margin-top: 0; }
+        .section { padding: 40px 0; border-bottom: #ddd 1px solid; background: #fff; }
+        .section:nth-child(even) { background: #f9f9f9; }
+        .project-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .project-card { background: #eee; padding: 20px; border-radius: 8px; text-align: center; }
+        .project-card h3 { color: #333; }
+        .project-card p { font-size: 0.9em; }
+        .project-card a { display: inline-block; margin-top: 10px; padding: 8px 15px; background: #77aaff; color: #fff; text-decoration: none; border-radius: 5px; }
+        .skills-list { list-style: none; padding: 0; display: flex; flex-wrap: wrap; justify-content: center; }
+        .skills-list li { background: #77aaff; color: #fff; padding: 8px 15px; margin: 5px; border-radius: 5px; }
+        .contact-form { max-width: 600px; margin: 20px auto; padding: 20px; background: #eee; border-radius: 8px; }
+        .contact-form label { display: block; margin-bottom: 5px; font-weight: bold; }
+        .contact-form input[type="text"], .contact-form input[type="email"], .contact-form textarea { width: calc(100% - 20px); padding: 10px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 5px; }
+        .contact-form button { background: #333; color: #fff; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; font-size: 1em; }
+        footer { text-align: center; padding: 20px; background: #333; color: #fff; }
+        .social-icons a { color: #fff; margin: 0 10px; font-size: 1.5em; text-decoration: none; }
+        .social-icons a:hover { color: #77aaff; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Viv0-Z</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="https://github.com/viv0-z" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
+                    </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Hello, I'm Viv0-Z!</h2>
+            <p>A passionate developer exploring the world of programming.</p>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>
+                Hi there! I'm Viv0-Z, an aspiring developer with a keen interest in [Your Area of Interest, e.g., web development, cybersecurity, mobile apps, data science]. I enjoy learning new technologies and solving problems with code. My journey in programming started with [mention how you started, e.g., learning Python, building small websites]. I'm currently focused on [what you're currently learning or working on].
+            </p>
+            <p>
+                In my free time, I like to [mention a hobby, e.g., contribute to open source, read tech blogs, play games, explore new tools]. I'm always looking for opportunities to collaborate on exciting projects and expand my skills.
+            </p>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>Project Title One</h3>
+                    <p>A brief description of your project. What problem does it solve? What technologies did you use?</p>
+                    <a href="https://github.com/viv0-z/your-repo-name-1" target="_blank">View on GitHub</a>
+                    </div>
+                <div class="project-card">
+                    <h3>Project Title Two</h3>
+                    <p>Another project description. Highlight key features and your role in developing it.</p>
+                    <a href="https://github.com/viv0-z/your-repo-name-2" target="_blank">View on GitHub</a>
+                </div>
+                <div class="project-card">
+                    <h3>Project Title Three</h3>
+                    <p>Even if it's a small script or a school assignment, describe it well!</p>
+                    <a href="https://github.com/viv0-z/your-repo-name-3" target="_blank">View on GitHub</a>
+                </div>
+                </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <div class="container">
+            <h2>My Skills</h2>
+            <ul class="skills-list">
+                <li>Python</li>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript (Basic)</li>
+                <li>Git & GitHub</li>
+                <li>Linux/Termux</li>
+                <li>[Add more skills here, e.g., C++, Java, SQL, specific frameworks]</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <p>Feel free to reach out if you have any questions or just want to connect!</p>
+            <p>You can find me on GitHub or send me an email.</p>
+            <p><strong>Email:</strong> <a href="mailto:your_email@example.com">your_email@example.com</a></p>
+            <div class="social-icons">
+                <a href="https://github.com/viv0-z" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Viv0-Z. All rights reserved.</p>
+        </div>
+    </footer>
+
+    </body>
+</html>
+
